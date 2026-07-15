@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CLI</title>
+    <link href="../output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h2 class="text-2xl underline my-5">Margenes</h2>
+
+    <p class="m-4 p-6 bg-yellow-200">
+      Margen de 16px 1rem y un padding de 1.5rem 24px
+    </p>
+
+    <ul class="space-y-2 ml-4">
+      <li>Element-1</li>
+      <li>Element-2</li>
+    </ul>
+
+    <hr class="my-6" />
+    <h2 class="text-2xl underline mb-4">Tipografía</h2>
+    <ul>
+      <li>Por defecto</li>
+      <li class="font-sans">Font Sans</li>
+      <li class="font-serif">Font Serif</li>
+      <li class="font-mono">Font Mono</li>
+      <li class="text-xs">Texto muy pequeño</li>
+      <li class="text-sm">Texto pequeño</li>
+      <li class="text-base">Texto base</li>
+      <li class="text-lg">Texto grande</li>
+      <li class="text-xl">Texto extra grande</li>
+      <li class="text-2xl">Texto más grande</li>
+      <li class="font-thin">Texto fino</li>
+      <li class="font-medium">Texto medi</li>
+      <li class="font-extrabold">Texto extra gordo</li>
+      <li class="text-left">Texto a la izquierda</li>
+      <li class="text-center">Texto centrado</li>
+      <li class="text-right">Texto a la derecha</li>
+      <li class="text-justify">Texto justificado</li>
+      <li class="tracking-tighter">Texto con espaciado reducido</li>
+      <li class="tracking-tight">Texto con espaciado reducido</li>
+      <li class="tracking-normal">Texto con espaciado reducido</li>
+      <li class="tracking-wide">Texto con espaciado reducido</li>
+      <li class="tracking-wider">Texto con espaciado reducido</li>
+      <li class="tracking-widest">Texto con espaciado reducido</li>
+    </ul>
+
+    <p class="mt-6 bg-stone-400 leading-none">
+      Interlineado-none <br />
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit dolor
+      tempora voluptatem earum iure hic quod beatae, temporibus ipsam eum ad vel
+      veniam molestiae fugit amet dolorum nam ut numquam.
+    </p>
+    <p class="mt-6 bg-stone-400 leading-loose">
+      Interlineado-lose <br />
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit dolor
+      tempora voluptatem earum iure hic quod beatae, temporibus ipsam eum ad vel
+      veniam molestiae fugit amet dolorum nam ut numquam.
+    </p>
+    <hr class="my-6" />
+
+    <h2 class="text-2xl underline my-5">Colores gradient</h2>
+    <div
+      class="container m-auto w-2xl h-32 bg-gradient-to-r from-blue-400 to-purple-600 flex items-center justify-center rounded-lg text-white text-xl shadow-xl shadow-violet-300"
+    >
+      Azul -> Morado
+    </div>
+
+    <h2 class="text-2xl underline my-5">Colores personalizados</h2>
+    <div class="text-white p-4 rounded-lg" style="background-color: tomato">
+      Colores personalizados en línea(style)
+    </div>
+
+    <h2 class="text-2xl underline my-5">Bordes y Sombras</h2>
+
+    <div
+      class="w-xs m-auto border border-pink-500 p-3 mb-4 text-center text-white font-bold bg-gradient-to-r from-gray-300 to-slate-500 rounded-2xl shadow-md shadow-slate-700"
+    >
+      Texto de pruebas
+    </div>
+    <div
+      class="border border-black p-4 rounded-full w-32 h-32 flex items-center justify-center m-auto"
+    >
+      Circulo
+    </div>
+    <hr class="my-6" />
+  </body>
+</html>
