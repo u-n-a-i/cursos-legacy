@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.unai.agenda.controller.NewContactController"
+      styleClass="vbox-formulario"
+      spacing="15"
+      alignment="TOP_CENTER">
+
+    <padding><Insets top="20" bottom="20" left="30" right="30" /></padding>
+
+    <Label text="Formulario de Contacto" styleClass="titulo-formulario" />
+
+    <!-- Campos del formulario -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Nombre:" minWidth="100" />
+        <TextField fx:id="campoNombre" HBox.hgrow="ALWAYS" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Teléfono:" minWidth="100" />
+        <TextField fx:id="campoTelefono" HBox.hgrow="ALWAYS" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Correo:" minWidth="100" />
+        <TextField fx:id="campoCorreo" HBox.hgrow="ALWAYS" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Web Personal:" minWidth="100" />
+        <TextField fx:id="campoWebPersonal" HBox.hgrow="ALWAYS" />
+    </HBox>
+
+    <!-- Carga de imagen -->
+    <HBox spacing="15" alignment="CENTER_LEFT">
+        <ImageView fx:id="previsualizacionImagen" preserveRatio="true" fitWidth="60" smooth="true" />
+        <Button text="Seleccionar Imagen" onAction="#cargarImagen" />
+        <Label fx:id="nombreImagen" HBox.hgrow="ALWAYS" />
+    </HBox>
+
+    <!-- Botones -->
+    <HBox styleClass="hbox-form-botones" spacing="10" alignment="CENTER_RIGHT">
+        <Button styleClass="botonCancelar" text="Cancelar" onAction="#cancelar" />
+        <Button styleClass="botonGuardar" text="Guardar" onAction="#guardarContacto" />
+    </HBox>
+
+</VBox>

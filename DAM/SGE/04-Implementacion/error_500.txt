@@ -1,0 +1,32 @@
+NOTA: Si Odoo no os deja acceder y os genera un error 500. 
+Tenéis que acceder a la base de datos y modificar al usuario admin la compañia, ponerle a company_id = 1.
+
+OPCIÓN A: Podéis hacerlo desde la terminal del DockerOs dejo aquí las instrucciones para acceder a la base de datos (postgreSQL) de Odoo y realizar el cambio.
+1. Acceder al contenedor PostgeSQL:
+docker exec -it poner_aqui_el_nombre_de_vuestro_contenedor bash
+
+2.Inicia sesión en la BBDD
+ psql -U odoo -d odoo
+
+3.Consulta una la tabla de usuarios
+SELECT * FROM res_users WHERE login='admin';
+
+NOTA: Para salir del (END) de la consulta pulsar q
+
+4.Mirar si tenemos la compañia 1 en la abla de compañias.
+SELECT id, name FROM res_company WHERE id=1;
+
+5.Modificar el campo company_id del usuario admin, ponerle la compañia con id 1
+ UPDATE res_users SET company_id=1 WHERE login='admin';
+
+6.Salir de aqui con q,\q, exit...
+
+OPCIÓN B: Instalaros pgAdmin
+1.https://www.pgadmin.org/download/
+2.Ejecutar el .exe
+3.Abrir pgAdmin
+4.En Server->Create->Server->Conection modificar los campos nombre de la base de datos, usuario y contraseña y por supuesto el host tiene que ser localhost, el puerto 5432.
+Esta info esta en el archivo de configuración que hablamos ayer (etc/odoo/odoo.conf) y en docker-compose.yml
+
+
+Volver a entrar a Odoo a través del navegador: http://localhost:8069

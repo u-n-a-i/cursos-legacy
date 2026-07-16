@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+section{
+    height: 100%;
+    width: 100%;
+    /* background-color: bisque; */
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+}
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+nav h1{
+    font-size: 50px;
+}
+nav h1 i{
+    rotate: 45deg;
+    display: inline-block;
+    font-size: 55px;
+}
+
+nav h4{
+    font-size: 30px;
+    font-weight: 500;
+}
+nav button{
+    padding: 18px 30px;
+    font-size: 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 2px solid #000;
+    background-color: transparent;
+}
+
+.center{
+    /* background-color: red; */
+    height: 80%;
+    width: 100%;
+    display: flex;
+    padding: 70px 100px;
+}
+.center-part1{
+    height: 100%;
+    width: 40%;
+    /* background-color: bisque; */
+}
+.center-part2{
+    height: 100%;
+    width: 60%;
+    position: relative;
+    /* background-color: plum; */
+}
+.center-part2 img{
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.center-part1 h1{
+    font-size: 90px;
+    font-weight: 400;
+}
+.center-part1 p{
+    font-size: 20px;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.center-part1 button{
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+    padding: 22px 40px;
+    font-weight: 600;
+    border: none;
+    font-size: 25px;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px;
+}
+.logos img{
+    height: 60px;
+}
+

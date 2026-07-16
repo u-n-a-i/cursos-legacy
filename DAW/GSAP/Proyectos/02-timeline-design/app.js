@@ -1,0 +1,60 @@
+const tl =gsap.timeline();
+
+ tl.from(
+     ".main",
+     {x:"-100%",
+         duration:4
+     }
+ )
+tl.from(
+    "#box1",
+    {x:"-100%",
+        opacity:0,
+        duration:2.5,
+        ease:"back"
+    }
+)
+tl.from(
+    "#box2",
+    {y:"100%",
+        opacity:0,
+        duration:2.5,
+        ease:"bounce"
+    }
+)
+tl.from(
+    "#box3",
+    {y:"-100%",
+        opacity:0,
+        duration:2.5,
+        ease:"bounce",
+        rotate:360
+    }
+)
+tl.from(
+    "#box4",
+    {y:"100%",
+        opacity:0,
+        duration:2.5,
+        ease:"bounce",
+        scale:0
+    }
+)
+tl.from(
+    "#box5",
+    {y:"-100%",
+        opacity:0,
+        duration:2.5,
+        ease:"slow",
+        
+    }
+)
+
+tl.from(
+    "#box6",
+    {x:"100%",
+        opacity:0,
+        duration:2.5,
+        ease:"back"
+    }
+)

@@ -1,0 +1,45 @@
+/* fichero.css */
+
+.root {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 20px;
+}
+
+.button-verde {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button-rojo {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button-azul {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.label-normal {
+    -fx-font-size: 18px;
+    -fx-text-fill: #444;
+    -fx-font-weight: normal;
+}
+
+.label-especial {
+    -fx-font-size: 18px;
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}

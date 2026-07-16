@@ -1,0 +1,22 @@
+Os dejo aquí las instrucciones para instalar el ERP, Odoo 18.
+1. Parte 1: Instalar Docker Desktop     pág.12 
+https://docs.docker.com/desktop/setup/install/windows-install/
+
+
+2. Odoo 18 en nuestro Docker Desktop pág.21
+(Vamos a poner este para tener todos la misma versión)
+https://github.com/vjmoreno/odoo-18-docker
+
+            
+            2.1. Accede al repositorio anterior de github y descarga el código en tu PC 
+            (odoo-18-
+docker-main.zip) en una carpeta/directorio que será la carpeta de tu proyecto.
+
+
+            2.1. Ingresa a la carpeta del proyecto y levanta los “Contenedores” . Para iniciar los contenedores              de Odoo y PostgreSQL,
+ejecuta esta instrucción en la Consola/Terminal de tu PC:
+            docker-compose up -d --build   
+            Ese comando reconstruye las imágenes de tus servicios (aunque ya existan), crea/actualiza los                contenedores, los arranca en segundo plano y los deja ejecutándose en background.
+
+3. Puesta en marcha de Odoo pág.22
+http://localhost:8069

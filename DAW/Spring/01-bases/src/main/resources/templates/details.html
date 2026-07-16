@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title th:text="${title}"></title>
+  </head>
+  <body style="background-color: #333; color: #fff">
+    <h1 th:text="${header}" style="text-align: center; color: green"></h1>
+    <hr />
+    <p th:text="${description}"></p>
+
+    <h2>Dependencias</h2>
+    <ul>
+      <li th:each="list : ${lists}" th:text="${list}"></li>
+    </ul>
+  </body>
+</html>

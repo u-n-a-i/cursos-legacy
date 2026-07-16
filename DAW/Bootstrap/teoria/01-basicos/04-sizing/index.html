@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #width {
+        background: #00658d;
+      }
+
+      #width div {
+        background: #4fcdff;
+      }
+
+      #height {
+        height: 300px;
+        background: #8d1000;
+      }
+
+      #height div {
+        display: inline-block;
+        background: lightcoral;
+      }
+
+      #viewport {
+        background: lightseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- WIDTH -->
+    <div class="container" id="width">
+      <div class="w-25 p-3 my-2">width 25%</div>
+      <div class="w-50 p-3 my-2">width 50%</div>
+      <div class="w-75 p-3 my-2">width 75%</div>
+      <div class="w-100 p-3 my-2">width 100%</div>
+      <div class="w-auto p-3 my-2">width auto</div>
+      <div class="mw-100 p-3 my-2">max width 100%</div>
+    </div>
+
+    <!-- HEIGHT -->
+    <div id="height" class="container p-3 mb-5">
+      <div class="h-25 p-3 mx-2">Height 25%</div>
+      <div class="h-50 p-3 mx-2">Height 50%</div>
+      <div class="h-75 p-3 mx-2">Height 75%</div>
+      <div class="h-100 p-3 mx-2">Height 100%</div>
+      <div class="h-auto p-3 mx-2">Height auto</div>
+    </div>
+
+    <!-- VIEWPORT -->
+    <div style="background: crimson" class="vw-100 vh-100"></div>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">VehicleRental</string>
+    <!-- Presentation -->
+    <string name="presentacion_titulo">Vehicles</string>
+    <string name="presentacion_parrafo">Register all the vehicles you own; you can also manage the ones you had previously.</string>
+    <string name="btn_siguiente">Next</string>
+    <!-- Login -->
+    <string name="login_titulo">Log in</string>
+    <string name="hint_usuario">Username</string>
+    <string name="hint_pass">Password</string>
+    <string name="btn_login">Log in</string>
+    <string name="registro"><u>Create account</u></string>
+    <string name="login_hero">Woman entering a car</string>
+    <string name="error_login">Incorrect username or password</string>
+    <!-- Register -->
+    <string name="registro_titulo">Create account</string>
+    <string name="repetir_pass">Repeat password</string>
+    <string name="crear_cuenta">Create account</string>
+    <!-- Vehicles -->
+    <string name="vehiculos_titulo">Vehicles</string>
+    <string name="imagen_vehiculo">Image of a vehicle</string>
+    <string name="guardar_cambios">Save changes</string>
+    <string name="matricula">License plate</string>
+    <string name="modelo">Model</string>
+    <string name="marca">Brand</string>
+    <string name="categoria">Category</string>
+    <string name="cambios_guardados_simulados">Changes saved</string>
+</resources>

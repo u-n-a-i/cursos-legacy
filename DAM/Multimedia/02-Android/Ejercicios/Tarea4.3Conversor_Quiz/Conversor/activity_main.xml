@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFF5FF">
+
+    <!-- Label kilómetros -->
+    <TextView
+        android:id="@+id/tvKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_kilometers"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#4A148C" />
+
+    <!-- Input kilómetros -->
+    <EditText
+        android:id="@+id/etKm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvKm"
+        android:layout_marginLeft="24dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_value" />
+
+    <!-- Botón a millas -->
+    <Button
+        android:id="@+id/btnKmAMillas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_to_miles"
+        android:layout_below="@id/etKm"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#7E57C2"
+        android:textColor="@android:color/white" />
+
+    <!-- Botón a kilómetros -->
+    <Button
+        android:id="@+id/btnMillasAKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_to_kilometers"
+        android:layout_toRightOf="@id/btnKmAMillas"
+        android:layout_alignTop="@id/btnKmAMillas"
+        android:layout_marginLeft="32dp"
+        android:backgroundTint="#7E57C2"
+        android:textColor="@android:color/white" />
+
+    <!-- Label millas -->
+    <TextView
+        android:id="@+id/tvMillas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_miles"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#4A148C"
+        android:layout_below="@id/btnKmAMillas"
+        android:layout_marginTop="32dp" />
+
+    <!-- Input millas -->
+    <EditText
+        android:id="@+id/etMillas"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvMillas"
+        android:layout_alignTop="@id/tvMillas"
+        android:layout_marginLeft="24dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_value" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+---
+import Layout from "./Layout.astro";
+
+const { subtitle } = Astro.props;
+---
+
+<Layout title="secondary page">
+  <section>
+    <h2>{subtitle}</h2>
+    <slot />
+  </section>
+</Layout>
+
+<style>
+  h2 {
+    color: rgb(51, 190, 211);
+  }
+</style>

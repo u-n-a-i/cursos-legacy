@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Visor de Animales</string>
+    <string name="gato">Gato</string>
+    <string name="leon">León</string>
+    <string name="perro">Perro</string>
+    <string name="tigre">Tigre</string>
+    <string name="volver">Volver</string>
+</resources>

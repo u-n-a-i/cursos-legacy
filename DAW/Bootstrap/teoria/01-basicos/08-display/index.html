@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desbordamiento, Display, Visibilidad</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .overflow div {
+        width: 200px;
+        height: 100px;
+        background: #f4f4f4;
+        display: inline-block;
+        margin: 0 15px;
+      }
+
+      .display div {
+        width: 200px;
+        height: 200px;
+        background: crimson;
+        border: 2px solid #000;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overflow container mt-5">
+      <h1>Desbordamiento</h1>
+      <div class="overflow-auto">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A incidunt,
+        temporibus quaerat ut ipsum commodi repudiandae. Nam illo tempore
+        quisquam iusto beatae eligendi officia doloribus, eos, quis officiis
+        facere nihil!
+      </div>
+
+      <div class="overflow-hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, at
+        commodi laboriosam dolore quos ex pariatur architecto repellat hic magni
+        quo eveniet optio voluptas dolorum, nesciunt aut accusamus eligendi
+        neque!
+      </div>
+
+      <div class="overflow-visible">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+        pariatur esse rerum vitae! Veniam quod esse obcaecati voluptatem unde
+        sint architecto quas consectetur, modi iste quibusdam maiores.
+        Laudantium, assumenda veniam.
+      </div>
+
+      <div class="overflow-scroll">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed
+        praesentium quod blanditiis! Dolores sapiente, aliquam dolorem non, est
+        officiis, nesciunt cumque inventore eius odit beatae ut nobis ipsam
+        incidunt.
+      </div>
+    </div>
+
+    <hr class="my-5" />
+
+    <div class="display container mt-5">
+      <h1>Display block</h1>
+      <div class="d-block"></div>
+      <div class="d-block"></div>
+      <div class="d-block"></div>
+      <div class="d-block"></div>
+      <div class="d-block"></div>
+
+      <hr class="my-5" />
+
+      <h1>Display Inline block</h1>
+      <div class="d-inline-block"></div>
+      <div class="d-inline-block"></div>
+      <div class="d-inline-block"></div>
+      <div class="d-inline-block"></div>
+
+      <hr class="my-5" />
+
+      <h1>Display Table cell</h1>
+      <div class="d-table-cell"></div>
+      <div class="d-table-cell"></div>
+      <div class="d-table-cell"></div>
+      <div class="d-table-cell"></div>
+
+      <hr class="my-5" />
+
+      <!--  
+          .d-{breakpoint}-{value} for sm, md, lg, xl, and xxl.
+          -->
+
+      <h1>Display Con breakpoints</h1>
+      <div class="d-block d-md-none d-lg-inline-block"></div>
+      <div class="d-block d-md-none d-lg-inline-block"></div>
+      <div class="d-block d-md-none d-lg-inline-block"></div>
+
+      <hr class="my-5" />
+    </div>
+
+    <hr class="my-5" />
+
+    <div class="container vh-100">
+      <h1>Visibilidad</h1>
+      <div class="w-100 h-25 bg-success d-inline-block"></div>
+
+      <div class="w-100 h-25 bg-primary d-inline-block d-none"></div>
+
+      <div class="w-100 h-25 bg-warning d-inline-block"></div>
+    </div>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

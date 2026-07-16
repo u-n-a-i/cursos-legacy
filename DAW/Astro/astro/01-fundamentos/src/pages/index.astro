@@ -1,0 +1,27 @@
+---
+import MainLayout from "../layout/MainLayout.astro";
+---
+
+<MainLayout title="Home">
+  <!-- *Server vs Client* --><!-- No se actualizaría -->
+  <p>Momento actual: {new Date().toLocaleTimeString()}</p>
+  <!-- Actualizar -->
+  <p id="current-time">Momento actual real:</p>
+
+  
+</MainLayout>
+
+<!-- Esto si haría el cambio en tiempo real -->
+<script>
+  const currentYear: number = new Date().getFullYear();
+  const footer = document.querySelector("footer") as HTMLElement;
+  footer.innerHTML = `Año: ${currentYear}`;
+
+  setInterval(() => {
+    const currentTime = new Date().toLocaleTimeString();
+    const currentTimeHTML = document.querySelector(
+      "#current-time"
+    ) as HTMLParagraphElement;
+    currentTimeHTML.innerHTML = `Momento actual real: ${currentTime}`;
+  }, 1000);
+</script>

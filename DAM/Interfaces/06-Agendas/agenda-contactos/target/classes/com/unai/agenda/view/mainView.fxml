@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.unai.agenda.controller.MainViewController">
+
+    <!-- Barra superior con botón de tema -->
+    <HBox AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" 
+          spacing="10" alignment="CENTER_RIGHT" style="-fx-padding: 10px 20px;" styleClass="barra-tema">
+        <Button fx:id="botonTema" styleClass="botonTema" onAction="#cambiarTema" />
+    </HBox>
+
+    <HBox AnchorPane.topAnchor="60" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20"
+          spacing="20" alignment="CENTER">
+
+        <!-- Tabla de contactos -->
+        <TableView fx:id="tablaContactos" HBox.hgrow="ALWAYS">
+            <columns>
+                <TableColumn text="Nombre" fx:id="columnaNombre" prefWidth="120" />
+                <TableColumn text="Teléfono" fx:id="columnaTelefono" prefWidth="100" />
+                <TableColumn text="Correo" fx:id="columnaCorreo" prefWidth="150" />
+            </columns>
+        </TableView>
+
+        <!-- Panel de detalles -->
+        <VBox fx:id="panelDetalles" spacing="15" alignment="TOP_CENTER" HBox.hgrow="ALWAYS" maxWidth="350">
+            <padding><Insets top="20" bottom="20" /></padding>
+
+            <!-- Imagen de perfil  -->
+            <ImageView fx:id="imagenPerfil"
+                       pickOnBounds="true"
+                       preserveRatio="true"
+                       fitWidth="100"
+                       smooth="true">
+                <clip>
+                    <Circle radius="50" centerX="50" centerY="50" />
+                </clip>
+            </ImageView>
+
+            <!-- Detalles del contacto -->
+            <VBox spacing="8" styleClass="detalles-contacto">
+                <Label fx:id="labelNombre" styleClass="nombre-contacto" />
+                <Label fx:id="labelTelefono" styleClass="campo-contacto" />
+                <Label fx:id="labelCorreo" styleClass="campo-contacto" />
+                <Label fx:id="labelWebPersonal" styleClass="campo-contacto" />
+            </VBox>
+
+            <!-- Botones de acción -->
+            <HBox styleClass="hboxBotones" spacing="15" alignment="CENTER">
+                <Button styleClass="botonBorrarContacto, botonesVentanaPrincipal" fx:id="botonBorrarContacto" onAction="#eliminarContacto"/>
+                <Button styleClass="botonEditarContacto, botonesVentanaPrincipal" fx:id="botonEditarContacto" onAction="#editarContacto" />
+                <Button styleClass="botonNuevoContacto, botonesVentanaPrincipal" fx:id="botonNuevoContacto" onAction="#mostrarFormulario" />
+            </HBox>
+        </VBox>
+
+    </HBox>
+
+</AnchorPane>

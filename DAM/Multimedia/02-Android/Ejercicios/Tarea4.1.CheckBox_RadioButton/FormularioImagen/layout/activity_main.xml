@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- Layout de btn -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona un animal:"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioPerro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perro" />
+
+            <RadioButton
+                android:id="@+id/radioGato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gato" />
+
+            <RadioButton
+                android:id="@+id/radioTigre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tigre" />
+
+            <RadioButton
+                android:id="@+id/radioLeon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="León" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:background="#f0f0f0"
+        android:contentDescription="Imagen del animal seleccionado"
+        android:scaleType="fitCenter"
+        android:src="@drawable/perro" />
+
+</LinearLayout>

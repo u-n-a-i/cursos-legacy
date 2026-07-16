@@ -1,0 +1,105 @@
+<odoo>
+    <!-- Acción de ventana -->
+    <record id="action_mutiny_dev_project" model="ir.actions.act_window">
+        <field name="name">Proyectos de Desarrollo</field>
+        <field name="res_model">mutiny.dev.project</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Vista List -->
+    <record id="view_mutiny_dev_project_list" model="ir.ui.view">
+        <field name="name">mutiny.dev.project.list</field>
+        <field name="model">mutiny.dev.project</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="reference_code"/>
+                <field name="name"/>
+                <field name="client_id"/>
+                <field name="assigned_developer_id"/>
+                <field name="status"/>
+                <field name="progress_percentage" widget="progressbar"/>
+                <field name="end_date"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Vista Form -->
+    <record id="view_mutiny_dev_project_form" model="ir.ui.view">
+        <field name="name">mutiny.dev.project.form</field>
+        <field name="model">mutiny.dev.project</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <!-- Botón Iniciar Desarrollo -->
+                    <button 
+                        name="action_start_development" 
+                        type="object"
+                        string="Iniciar Desarrollo"
+                        class="btn-primary"
+                        invisible="status != 'planned'"
+                    />
+                    
+                    <!-- Botón Pasar a En Pruebas -->
+                    <button
+                        name="action_start_testing"
+                        type="object"
+                        string="Pasar a Pruebas"
+                        class="btn-warning"
+                        invisible="status != 'in_progress'"
+                    />
+
+                    <!-- Botón Marcar como Entregado -->
+                    <button
+                        name="action_mark_done"
+                        type="object"
+                        string="Entregar"
+                        class="btn-success"
+                        invisible="status != 'testing'"
+                    />
+
+                    <field name="status" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name"/></h1>
+                        <h3><field name="reference_code" readonly="1"/></h3>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="client_id"/>
+                            <field 
+                                name="assigned_developer_id" 
+                                domain="[('job_title', 'ilike', 'Desarrollador')]"
+                            />
+                            <field name="complexity"/>
+                        </group>
+                        <group>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                            <field name="estimated_hours"/>
+                            <field name="actual_hours"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Progreso">
+                            <field name="progress_percentage" widget="progressbar"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <!-- Menú principal -->
+    <menuitem id="menu_mutiny_dev_root"
+              name="Desarrollo"
+              sequence="10"/>
+
+    <!-- Submenú -->
+    <menuitem id="menu_mutiny_dev_project"
+              name="Proyectos"
+              parent="menu_mutiny_dev_root"
+              action="action_mutiny_dev_project"
+              sequence="1"/>
+</odoo>

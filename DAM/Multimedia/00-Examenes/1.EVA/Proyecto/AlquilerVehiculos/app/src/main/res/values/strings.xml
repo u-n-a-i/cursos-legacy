@@ -1,0 +1,29 @@
+<resources>
+    <!-- Generales -->
+    <string name="app_name">AlquilerVehiculos</string>
+    <!-- Presentación -->
+    <string name="presentacion_titulo">Vehículos</string>
+    <string name="presentacion_parrafo">Da de alta todos los vehículos que tengas, también puedes gestionar los que has tenido anteriormente.</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <!-- Login -->
+    <string name="login_titulo">Iniciar sesión</string>
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_pass">Contraseña</string>
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="registro"><u>Crear cuenta</u></string>
+    <string name="login_hero">Mujer entrando en un coche</string>
+    <string name="error_login">Usuario o contraseña incorrectos</string>
+    <!-- Registro -->
+    <string name="registro_titulo">Crear cuenta</string>
+    <string name="repetir_pass">Repetir contraseña</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <!-- Vehículos -->
+    <string name="vehiculos_titulo">Vehículos</string>
+    <string name="imagen_vehiculo">Imagen de un vehículo</string>
+    <string name="guardar_cambios">Guardar cambios</string>
+    <string name="matricula">Matricula</string>
+    <string name="modelo">Modelo</string>
+    <string name="marca">Marca</string>
+    <string name="categoria">Categoria</string>
+    <string name="cambios_guardados_simulados">Cambios guardados</string>
+</resources>

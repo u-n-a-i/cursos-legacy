@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1,#page2,#page3{
+    height: 100vh;
+    width: 100%;
+}
+#moved{
+    background-color: yellow;
+    display: flex;
+    overflow: hidden;
+}
+.marque{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding:0 1.5vw ;
+}
+.marque h1{
+    font-size: 70px;
+}
+
+.marque img{
+    height: 70px;
+}

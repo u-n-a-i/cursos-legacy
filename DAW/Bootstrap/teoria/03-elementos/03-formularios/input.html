@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <style>
+      input,
+      select {
+        margin: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-4">
+      <h1>Inputs</h1>
+      <input type="text" />
+      <input class="form-control" type="text" placeholder="Input default" />
+      <input
+        class="form-control form-control-sm"
+        type="text"
+        placeholder="Input sm"
+      />
+      <input
+        class="form-control form-control-lg"
+        type="text"
+        placeholder="Input lg"
+      />
+
+      <hr class="my-5" />
+      <h1>Input Deshabilitados</h1>
+      <input type="text" disabled />
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Disabled input"
+        disabled
+      />
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Readonly input"
+        readonly
+      />
+      <input
+        type="text"
+        class="form-control-plaintext"
+        value="email@example.com"
+        readonly
+      />
+
+      <hr class="my-5" />
+      <h1>Input File</h1>
+      <input type="file" name="" id="" />
+      <input class="form-control" type="file" id="formFile" />
+      <input class="form-control" type="file" id="formFileMultiple" multiple />
+      <input class="form-control form-control-sm" id="formFileSm" type="file" />
+      <input class="form-control form-control-lg" id="formFileLg" type="file" />
+
+      <hr class="my-5" />
+      <h1>Input Color picker</h1>
+      <input type="color" name="" id="" />
+      <input
+        type="color"
+        class="form-control form-control-color"
+        value="#563d7c"
+        title="Elije color"
+      />
+
+      <hr class="my-5" />
+      <h1>Datalist</h1>
+      <input
+        list="datalistOptions"
+        id="exampleDataList"
+        placeholder="Buscar..."
+      />
+      <datalist id="datalistOptions">
+        <option value="San Francisco"></option>
+        <option value="New York"></option>
+        <option value="Seattle"></option>
+        <option value="Los Angeles"></option>
+        <option value="Chicago"></option>
+      </datalist>
+
+      <input
+        class="form-control"
+        list="datalistOptions"
+        id="exampleDataList"
+        placeholder="Buscar..."
+      />
+      <datalist id="datalistOptions">
+        <option value="San Francisco"></option>
+        <option value="New York"></option>
+        <option value="Seattle"></option>
+        <option value="Los Angeles"></option>
+        <option value="Chicago"></option>
+      </datalist>
+
+      <hr class="my-5" />
+      <h1>Select</h1>
+      <select>
+        <option selected>Abrir menú</option>
+        <option value="1">Uno</option>
+        <option value="2">Dos</option>
+        <option value="3">Tres</option>
+      </select>
+
+      <select class="form-select">
+        <option selected>Abrir menú</option>
+        <option value="1">Uno</option>
+        <option value="2">Dos</option>
+        <option value="3">Tres</option>
+      </select>
+
+      <select multiple>
+        <option selected>Seleccione</option>
+        <option value="1">Uno</option>
+        <option value="2">Dos</option>
+        <option value="3">Tres</option>
+      </select>
+
+      <select class="form-select" multiple>
+        <option selected>Seleccione</option>
+        <option value="1">Uno</option>
+        <option value="2">Dos</option>
+        <option value="3">Tres</option>
+      </select>
+
+      <hr class="my-5" />
+      <h1>Input de rango</h1>
+      <input type="range" id="range" />
+      <input type="range" class="form-range" id="range" />
+
+      <hr class="my-5" />
+    </div>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

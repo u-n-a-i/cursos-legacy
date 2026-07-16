@@ -1,0 +1,16 @@
+id_venta,nombre,producto,monto
+1,Ana,Portátil,1200
+2,Luis,Móvil,800
+3,Marta,Tablet,600
+4,Ana,Monitor,300
+5,Luis,Portátil,1300
+6,Carlos,Móvil,700
+7,Ana,Teclado,100
+8,Lucía,Portátil,2000
+9,Elena,Tablet,500
+10,Lucía,Móvil,1500
+11,Luis,Monitor,400
+12,Ana,Móvil,900
+13,Marta,Portátil,1400
+14,Diego,Tablet,450
+15,Elena,Móvil,1000

@@ -1,0 +1,13 @@
+Label {
+    -fx-text-fill: #778899;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+#btnCerrar {
+    -fx-background-color: #87cefa;
+    -fx-font-size: 14px;
+    -fx-text-fill: #fff;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px 15px;
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="label_kilometers">Kilómetros</string>
+    <string name="label_miles">Millas</string>
+    <string name="btn_to_miles">A millas</string>
+    <string name="btn_to_kilometers">A kilómetros</string>
+    <string name="hint_value">0.0</string>
+    <string name="toast_enter_km">Introduce los kilómetros</string>
+    <string name="toast_enter_miles">Introduce las millas</string>
+</resources>

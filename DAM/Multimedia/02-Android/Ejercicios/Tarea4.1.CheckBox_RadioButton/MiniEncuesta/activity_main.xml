@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige un sistema operativo"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioWindows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Windows" />
+
+        <RadioButton
+            android:id="@+id/radioLinux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linux" />
+
+        <RadioButton
+            android:id="@+id/radioMac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mac" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige tu especialidad"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkProgramacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programación" />
+
+    <CheckBox
+        android:id="@+id/checkDisenio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diseño gráfico" />
+
+    <CheckBox
+        android:id="@+id/checkAdministracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Administración" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Aceptar" />
+
+</LinearLayout>
